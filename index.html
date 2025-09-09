@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="memeCodeCouleur">
+        <nav class="center">
+            <a href="" style="text-decoration: none;">
+                <h1 style="color:  rgb(115, 115, 240); font-size: 50px; font-family:arial black; font-size: 80px;">
+                    VS<span style="font-size: 70px;"><i>-I</i></span><span
+                        style="font-size: 20px; color: white;"><em>nformatique</em> </span> </h1>
+            </a>
+            <ul class="listApropos">
+                <li><a href="">A propos</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Mes compétences</a></li>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="">Blog</a></li>
+            </ul>
+            <button style="color: white; background-color: black; height: 30px; font-size: 20px;"><a
+                    href="#projet" style="color: white;">Discutons de ton
+                projet</a></button>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="bigSectionBanner memeCodeCouleur">
+            <section class="banner">
+
+                <section class="bannerText">
+                    <p style="font-weight: 26px;">Creative Developper</p>
+                    <p style="font-weight: 600; font-size: 30px;">Bienvenu(e), Je suis</p>
+                    <h2>KODJO Ahlonko Isaac</h2>
+                    <p>Explorez mes réalisations et plongez dans des expériences <br> digitales conçues pour inspirer,
+                        séduire et
+                        offrir des solutions à <br>chaque projet</p>
+                    <section class="cv">
+                        <input type="submit" value="Mon CV"
+                            style="background-color: black; color: white; width: 150px; height: 26px;">
+                        <input type="submit" value="Mon Portfolio"
+                            style="background-color: white; color: black; width: 150px; border: solid 1px; height: 26px;">
+                    </section>
+                </section>
+
+            </section>
+            <img src="./images/image-chrisb-removebg-preview.png" alt="bannière" class="imgBanner">
+
+        </section>
+
+        <div class="containerApropos">
+            <div class="apropos">
+                <h3>A Propos de moi</h3>
+                <p style="color: white; margin: 50px 200px 10px 200px;"> Je suis entrepreneur, compétent dans le
+                    développement web et mobile ainsi qu’en Informatique Réseau
+                    et Télécom. Mon expertise s’étend du développement front-end et back-end d’applications web et
+                    mobiles, à la gestion de bases de données, à la sécurisation des systèmes et à l’optimisation des
+                    performances. Passionné par les technologies innovantes, je conçois des solutions pratiques et
+                    performantes pour répondre aux besoins des entreprises et des particuliers, tout en cherchant
+                    constamment à améliorer l’expérience utilisateur et l’efficacité des projets.</p>
+
+                <div class="projetRealiseGranDiv">
+                    <div class="projet">
+
+                        <span><span style="font-size: 40px;">50+</span> <br> Projets réalisés</span>
+                    </div>
+                    <div class="annee">
+                        <span><span style="font-size: 40px;">5+</span> <br> Années d'expériences</span>
+                    </div>
+                    <div class="client">
+                        <span><span style="font-size: 40px;">30+</span> <br> Clients Satisfaits</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <script>
+            // Sélection des 3 valeurs (les premiers <span> dans chaque bloc)
+            const projet = document.querySelector(".projet span span");
+            const annee = document.querySelector(".annee span span");
+            const client = document.querySelector(".client span span");
+
+            // Fonction pour animer un compteur
+            function animerCompteur(element, valeurFinale, duree) {
+                let count = 0;
+                let increment = Math.ceil(valeurFinale / (duree / 50));
+
+                let interval = setInterval(() => {
+                    count += increment;
+                    if (count >= valeurFinale) {
+                        count = valeurFinale;
+                        clearInterval(interval);
+                    }
+                    element.textContent = count + "+";
+                }, 50);
+            }
+
+            // Lancer les animations
+            animerCompteur(projet, 50, 2000);  // 50 projets en 2s
+            animerCompteur(annee, 5, 2000);    // 5 ans en 2s
+            animerCompteur(client, 30, 2000);  // 30 clients en 2s
+        </script>
+
+
+        <div class="serviceGrandDiv">
+            <div class="services">
+                <h3 class="colorBlack">Services</h3>
+                <p style="color: black; margin: 50px 200px 10px 200px;">Développement web & mobile : sites, applications
+                    modernes et performantes.
+
+                    Réseaux & Télécoms : installation, configuration et sécurisation.
+
+                    Maintenance & Support : suivi technique et optimisation continue.
+
+                    Conseil & Formation : accompagnement et transfert de compétences.</p>
+            </div>
+            <div class="designGrandDiv">
+                <div class="design">
+                    <img src="./images/star.png" alt="star" style="height: 4rem; width: 4rem;">
+                    <h4>Dessign</h4>
+                    <span>Je crée des interfaces modernes, claires et fonctionnelles, alliant ergonomie et esthétique.
+                        J’utilise Figma, Bootstrap, ReactJS et Laravel pour transformer les maquettes en expériences web
+                        et mobiles performantes et engageantes.</span>
+
+                </div>
+                <div class="devWeb">
+                    <img src="./images/circle.png" alt="devWeb" style="height: 4rem; width: 4rem;">
+                    <h4>Développement Web</h4>
+                    <span>Développement Web
+                        Je conçois et développe des sites et applications web performants, responsives et sécurisés.
+                        J’utilise Laravel, ReactJS et Bootstrap pour transformer des idées en solutions digitales
+                        efficaces et intuitives.
+                    </span>
+                </div>
+                <div class="devMobile">
+                    <img src="./images/seo.png" alt="devMob" style="height: 4rem; width: 4rem;">
+                    <h4>Développement mobile</h4>
+                    <span>Développement Mobile
+                        Je crée des applications mobiles fluides et ergonomiques pour Android et iOS, alliant design
+                        moderne et fonctionnalités optimisées. Mes outils : React Native, Flutter et bonnes pratiques
+                        UX/UI.
+                    </span>
+                </div>
+                <div class="formation">
+                    <img src="./images/checklist.png" alt="formation" style="height: 4rem; width: 4rem;">
+                    <h4>Formation</h4>
+                    <span>Formation
+                        Je partage mes connaissances en développement web, mobile et réseaux, à travers des formations
+                        pratiques et adaptées. Mon objectif : rendre les technologies accessibles et permettre à chacun
+                        de progresser rapidement.</span>
+                </div>
+            </div>
+        </div>
+
+
+        <script>
+            // Récupération de tous les services
+            const services = document.querySelectorAll(".designGrandDiv > div");
+
+            // On cache d'abord tous les services
+            services.forEach(service => {
+                service.style.opacity = 0;
+                service.style.transform = "translateY(30px)";
+            });
+
+            // Fonction pour les afficher un par un
+            function afficherServices() {
+                services.forEach((service, index) => {
+                    setTimeout(() => {
+                        service.style.transition = "all 0.8s ease";
+                        service.style.opacity = 1;
+                        service.style.transform = "translateY(0)";
+                    }, index * 500); // délai entre chaque service (0.5s)
+                });
+            }
+
+            // Lancer l'animation au chargement de la page
+            window.addEventListener("load", afficherServices);
+        </script>
+
+
+
+        <div class="mesRealisationGrandDiv">
+            <div class="grandDivMesRealisations">
+                <section class="mesRealisations">
+                    <div class="realisation">
+                        <h3 class="colorBlack">Mes Réalisations</h3>
+                        <p>Découvrez quelques uns de mes projets récents où design, technologie et créativité se
+                            rencontrent
+                            pour donner vie à des expériences digitales uniques.</p>
+                    </div>
+                    <div class="projetGrandDiv">
+                        <div class="projet1">
+                            <img src="./images/figma.webp" alt="PROJET1" class="imgMesCompetences"
+                                style="height: 14rem; width: 20rem;">
+                            <h4>Disign Figma</h4>
+                            <p>Maquette Figma <img src="./images/right-up.png" alt=""
+                                    style="height: 3rem; width: 3rem; margin-bottom: -18px; "></p>
+                        </div>
+                        <div class="projet2">
+                            <img src="./images/site-vitrine.png" alt="PROJET2" class="imgMesCompetences"
+                                style="height: 14rem; width: 20rem;">
+                            <h4>Site web</h4>
+                            <p>Site vitrine<img src="./images/right-up.png" alt=""
+                                    style="height: 3rem; width: 3rem; margin-bottom: -18px;"></p>
+                        </div>
+                        <div class="projet3">
+                            <img src="./images/e-commerce.webp" alt="PROJET3" class="imgMesCompetences"
+                                style="height: 14rem; width: 20rem;">
+                            <h4>E-commerce App</h4>
+                            <p>Site E-commerce <img src="./images/right-up.png" alt=""
+                                    style="height: 3rem; width: 3rem; margin-bottom: -18px;"></p>
+                        </div>
+                    </div><br><br><br><br>
+                    <div class="projetGrandDiv2">
+                        <div class="projet1">
+                            <img src="./images/figma.webp" alt="PROJET1" class="imgMesCompetences"
+                                style="height: 14rem; width: 20rem;">
+                            <h4>Disign Figma</h4>
+                            <p>Maquette Figma <img src="./images/right-up.png" alt=""
+                                    style="height: 3rem; width: 3rem; margin-bottom: -18px; "></p>
+                        </div>
+                        <div class="projet2">
+                            <img src="./images/site-vitrine.png" alt="PROJET2" class="imgMesCompetences"
+                                style="height: 14rem; width: 20rem;">
+                            <h4>Site web</h4>
+                            <p>Site vitrine<img src="./images/right-up.png" alt=""
+                                    style="height: 3rem; width: 3rem; margin-bottom: -18px;"></p>
+                        </div>
+                        <div class="projet3">
+                            <img src="./images/e-commerce.webp" alt="PROJET3" class="imgMesCompetences"
+                                style="height: 14rem; width: 20rem;">
+                            <h4>E-commerce App</h4>
+                            <p>Site E-commerce <img src="./images/right-up.png" alt=""
+                                    style="height: 3rem; width: 3rem; margin-bottom: -18px;"></p>
+                        </div>
+                    </div>
+
+
+
+
+                </section>
+                <section class="grandDivMesCompetences">
+                    <div class="competencesTexte">
+                        <h3 class="colorBlack">Mes compétences</h3>
+                        <p>Voici un apperçu de mes compétences techniques et créatives, acquises au fil de mes projets
+                            en
+                            dévéloppement web, mobile, réseau, disign</p>
+                    </div>
+
+                    <div class="progressGrandDiv1">
+                        <div class="devWeb">
+                            <h4>Développement Web</h4>
+                            <div class="containerFlex">
+                                <div class="containerDevWebProgress">
+                                    <span class="progressDevWeb" style="width: 60%;"></span>
+                                </div>
+                                <span>60%</span>
+                            </div>
+                        </div>
+                        <div class="devWeb">
+                            <h4>Formation</h4>
+                            <div class="containerFlex">
+                                <div class="containerDevWebProgress">
+                                    <span class="progressDevWeb" style="width: 75%;"></span>
+                                </div>
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progressGrandDiv1">
+                        <div class="devWeb">
+                            <h4>Développement Web</h4>
+                            <div class="containerFlex">
+                                <div class="containerDevWebProgress">
+                                    <span class="progressDevWeb" style="width: 60%;"></span>
+                                </div>
+                                <span>60%</span>
+                            </div>
+                        </div>
+                        <div class="devWeb">
+                            <h4>Formation</h4>
+                            <div class="containerFlex">
+                                <div class="containerDevWebProgress">
+                                    <span class="progressDevWeb" style="width: 75%;"></span>
+                                </div>
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progressGrandDiv1">
+                        <div class="devWeb">
+                            <h4>Développement Web</h4>
+                            <div class="containerFlex">
+                                <div class="containerDevWebProgress">
+                                    <span class="progressDevWeb" style="width: 60%;"></span>
+                                </div>
+                                <span>60%</span>
+                            </div>
+                        </div>
+                        <div class="devWeb">
+                            <h4>Formation</h4>
+                            <div class="containerFlex">
+                                <div class="containerDevWebProgress">
+                                    <span class="progressDevWeb" style="width: 75%;"></span>
+                                </div>
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+
+                <script>
+                    // Sélection de toutes les barres de progression
+                    const progressBars = document.querySelectorAll(".progressDevWeb");
+
+                    // Fonction d'animation
+                    function animerProgressBar(bar) {
+                        let largeurFinale = bar.style.width; // ex: "60%"
+                        bar.style.width = "0%"; // on remet à 0
+                        let count = 0;
+                        let valeur = parseInt(largeurFinale); // valeur numérique (ex: 60)
+
+                        let interval = setInterval(() => {
+                            if (count >= valeur) {
+                                clearInterval(interval);
+                            } else {
+                                count++;
+                                bar.style.width = count + "%";
+                            }
+                        }, 20); // vitesse (plus petit = plus rapide)
+                    }
+
+                    // Lancer l’animation au chargement
+                    window.addEventListener("load", () => {
+                        progressBars.forEach(bar => {
+                            animerProgressBar(bar);
+                        });
+                    });
+                </script>
+
+
+
+            </div>
+
+        </div> <br><br><br><br>
+
+        <section class="temoignages" style="padding-left: 14%; padding-right: 14%;">
+            <h2>Témoignages</h2>
+            <p class="temoignage-text">
+                Les designs de Kodjo Ahlonko Isaac sont à la fois visuellement captivants et très efficaces.
+                Il a transformé notre site web, améliorant l’engagement des utilisateurs et les conversions.
+                Son sens du détail et son approche créative sont remarquables. Je le recommande vivement !
+            </p>
+            <div class="auteur">
+                <img src="./images/responsable1.jpg" alt="Auteur" style="width: 3rem; height: 3rem;">
+                <p><strong>M. JUSTIN A.</strong> Client de VS-<i>I</i></p>
+            </div>
+        </section>
+
+        <!-- SECTION IDEES ET INSPIRATION -->
+        <section class="inspiration">
+            <h2 style="  color: rgb(41, 39, 39);
+">Idées et inspiration en design</h2>
+            <p>
+                Découvrez des analyses du secteur, des conseils d’experts et des sources d’inspiration en design.
+                Restez à jour avec les dernières tendances en design web et expérience utilisateur.
+            </p>
+
+            <div class="cards">
+                <div class="card">
+                    <img src="./images/OIP.webp" alt="Typography" style="height: 10.7rem;">
+                    <p class="date">August 15, 2023 / UX</p>
+                    <h3 class="colorBlack">Typography Tips for Design Success</h3>
+                    <p>Dive into the world of web typography and discover how to choose, pair, and optimize fonts.</p>
+                    <a href="#">Read More →</a>
+                </div>
+
+                <div class="card">
+                    <img src="./images/color.webp" alt="Color Psychology">
+                    <p class="date">August 15, 2023 / UX</p>
+                    <h3 class="colorBlack">Color Psychology in UX</h3>
+                    <p>Explore how color choices impact user emotions and decision-making in UX design.</p>
+                    <a href="#">Read More →</a>
+                </div>
+
+                <div class="card">
+                    <img src="./images/ux.webp" alt="Microinteractions">
+                    <p class="date">August 15, 2023 / UX</p>
+                    <h3 class="colorBlack">Boosting UX with Microinteractions</h3>
+                    <p>Discover the power of microinteractions in enhancing user experience and engagement.</p>
+                    <a href="#">Read More →</a>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <script>
+            // Sélectionner toutes les cartes
+            const cards = document.querySelectorAll(".inspiration .card");
+
+            // Effet au survol
+            cards.forEach(card => {
+                card.addEventListener("mouseenter", () => {
+                    card.style.transform = "scale(1.05)";
+                    card.style.transition = "transform 0.3s";
+                });
+
+                card.addEventListener("mouseleave", () => {
+                    card.style.transform = "scale(1)";
+                });
+            });
+
+            // Quand on clique sur "Read More"
+            const links = document.querySelectorAll(".inspiration .card a");
+            links.forEach(link => {
+                link.addEventListener("click", (event) => {
+                    event.preventDefault(); // éviter le # inutile
+                    alert("Tu as cliqué sur : " + link.previousElementSibling.textContent);
+                });
+            });
+        </script>
+
+
+
+
+        <!-- SECTION CONTACT -->
+        <section class="contact-section">
+            <div class="contact-container">
+                <!-- Partie gauche -->
+                <div class="contact-info">
+                    <h2><a href="" id="projet">Contactez-moi</a></h2>
+                    <p>
+                        Vous avez une question ou un projet en tête ? Je serais ravi d'en discuter avec vous.
+                        Échangeons nos idées et créons ensemble quelque chose d'exceptionnel.
+                    </p>
+
+                    <p>📞 00228 90 66 33 98</p>
+                    <p>📧 kodjoahlonkoisaac@gmail.com</p>
+                    <p>📍 Lomé, Togo</p>
+
+                    <div class="socials">
+                        <a href="#">🌐</a>
+                        <a href="#">🐦</a>
+                        <a href="#">📸</a>
+                        <a href="#">👍</a>
+                    </div>
+                </div>
+
+                <!-- Partie droite -->
+                <div class="contact-form">
+                    <form>
+                        <input type="text" placeholder="Votre nom" required>
+                        <input type="email" placeholder="Email" required>
+                        <input type="tel" placeholder="Numéro de téléphone">
+                        <textarea placeholder="Votre message" rows="5"></textarea>
+                        <button type="submit">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-links">
+                    <a href="#">À Propos</a>
+                    <a href="#">Services</a>
+                    <a href="#">Portfolio</a>
+                    <a href="#">Blog</a>
+                </div>
+                <h3 class="footer-logo">VS-<i>I</i></h3>
+                <p>Suivez-moi sur les réseaux sociaux</p>
+                <div class="footer-socials">
+                    <a href="#">LinkedIn</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Facebook</a>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,352 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.listApropos {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+
+}
+
+.listApropos li a {
+    color: black;
+    font-weight: bold;
+    font-family: arial;
+    font-size: 17px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.banner {
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 80px;
+
+
+}
+
+.bigSectionBanner {
+    display: flex;
+    margin-bottom: -60px;
+}
+
+p {
+    font-family: Calibri;
+    font-weight: 110;
+    font-size: 27px;
+}
+
+h2 {
+    color: rgb(115, 115, 240);
+    font-weight: 810;
+    font-size: 40px;
+    font-family: arial;
+}
+
+.memeCodeCouleur {
+    background-color: rgba(141, 141, 224, 0.438);
+}
+
+.cv {
+    display: flex;
+    gap: 30px
+}
+
+h3 {
+    font-family: arial;
+    font-weight: 550;
+    font-size: 32px;
+    color: white;
+    margin-top: 30px;
+    margin-top: 80px;
+
+
+}
+
+.containerApropos {
+    text-align: center;
+    background-color: black;
+    display: flex;
+
+}
+
+.projetRealiseGranDiv {
+    display: flex;
+    color: white;
+    justify-content: center;
+    gap: 400px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-family: bold;
+    font-weight: 600;
+}
+
+.colorBlack {
+    font-family: arial;
+    font-weight: 550;
+    font-size: 32px;
+    color: black;
+    margin-top: 30px;
+    margin-top: 80px;
+}
+
+.serviceGrandDiv {
+    /* display: flex; */
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 150px;
+}
+
+.designGrandDiv {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 80px;
+    object-fit: contain;
+}
+
+.realisation {
+    background-color: rgba(177, 178, 253, 0.562);
+
+    justify-content: center;
+    text-align: center;
+    padding: 10px 200px 200px 200px;
+}
+
+.projetGrandDiv {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: -150px;
+    /* background-color: green; */
+}
+
+.imgMesCompetences {
+    height: 20rem;
+    width: 14rem;
+
+}
+
+.projetGrandDiv2 {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.competencesTexte {
+    text-align: center;
+    padding: 10px 200px 60px 200px;
+}
+
+.competenceBare {
+    display: flex;
+}
+
+.bar {
+    background-color: blue;
+    border-radius: 20px;
+    width: 100%;
+    margin-top: 5px;
+    overflow: hidden;
+}
+
+.containerDevWebProgress {
+    background-color: lightslategray;
+    width: 24rem;
+    border-radius: 2rem;
+    height: 6px;
+    display: flex;
+    /* align-items: center;
+    justify-content: space-between; */
+    
+}
+
+.progressDevWeb {
+    display: block;
+    background-color: black;
+    
+    height: 6px;
+    border-radius: 2rem 0px 0px 2rem;
+}
+.containerFlex{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.progressGrandDiv1{
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+/* SECTION TEMOIGNAGES */
+.temoignages {
+  background: #e9d7f7;
+  text-align: center;
+  /* padding: 50px 20px; */
+}
+.temoignages h2 {
+  margin-bottom: 20px;
+  color: rgb(41, 39, 39);
+  padding-top: 40px;
+}
+.temoignage-text {
+  font-style: italic;
+  margin-bottom: 20px;
+}
+.auteur {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.auteur img {
+  border-radius: 50%;
+}
+
+/* SECTION INSPIRATION */
+.inspiration {
+  padding: 60px 20px;
+  text-align: center;
+}
+.inspiration p {
+  max-width: 700px;
+  margin: auto;
+}
+.cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  max-width: 300px;
+  text-align: left;
+}
+.card img {
+  border-radius: 8px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.card .date {
+  font-size: 14px;
+  color: gray;
+}
+.card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* SECTION CONTACTEZ-NOUS */
+.contact-section {
+  background-color: #e9d7f7;
+  padding: 50px 20px;
+}
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1100px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+.contact-info {
+  flex: 1;
+  min-width: 280px;
+}
+.contact-info h2 {
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+.contact-info p {
+  margin: 8px 0;
+}
+.socials a {
+  margin-right: 10px;
+  font-size: 22px;
+  text-decoration: none;
+}
+.contact-form {
+  flex: 1;
+  min-width: 280px;
+}
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+}
+.contact-form button {
+  background: black;
+  color: white;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* FOOTER */
+.footer {
+  background: black;
+  color: white;
+  padding: 40px 20px;
+  /* text-align: center; */
+  /* justify-content: center; */
+}
+.footer-container {
+  /* max-width: 1000px; */
+  margin: auto;
+  /* justify-content: space-between; */
+  text-align: center;
+}
+.footer-links {
+  margin-bottom: 20px;
+    /* justify-content: space-between; */
+display: flex;
+  gap:  70px;
+  justify-content: center;
+  text-align: center;
+  
+}
+.footer-links a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  gap: 100px ;
+  
+}
+.footer-logo {
+  margin: 15px 0;
+  font-size: 22px;
+}
+.footer-socials a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
